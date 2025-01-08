@@ -1,0 +1,43 @@
+Automation Testing :
+Testing any application feature with the help of Automaion Tool
+
+Tool :
+Sahi
+Sahi pro
+Appium 
+Ranorex 
+Selenium
+Protector
+
+Manual DisAdvatage :
+1. Reuired more resources
+2.Regression Testing - required more time to execute/perform 
+3.CrossBrowser Testing -- difficult to implement and its also reuired more time for execution
+     ex. Chrome --TC -5 min === 4 Browser *5 =20 min 
+4.Test cycle duration increase 
+
+
+Automation Testing Advantage 
+1. Required less resources 
+2.Regression Testing and Cross Browser Testing --- required less time 
+3.Test cycle duration decrease 
+
+Selenium :
+Open source tool --- No licence reuired
+Support multiple O.S.
+Support multiple languages -- Python,C#,Pearl,Ruby,JavaScript .....
+
+Disadvantages Selenium :
+we can not automate Standalone Application/Desktop 
+We can not handle Captcha and Barcode 
+We can not automate File upload and Download Activity using selenium
+ EX. Third Party Tool -AutoIT/Robot Class 
+
+========================================================
+Selenium WebDriver 
+
+SearchContext (I)-extends-- WebDriver(I)--Implement--RemoteWebDriver class (C) --extends-ChromeDriver (C)/Multiple BrowserDriver classes
+
+Maven Project : 
+
+Maven -Build Management tool 

@@ -41,3 +41,36 @@ SearchContext (I)-extends-- WebDriver(I)--Implement--RemoteWebDriver class (C) -
 Maven Project : 
 
 Maven -Build Management tool 
+
+================================
+
+
+ Browser open -Chrome (Url)
+ Enter valid data to Email id
+ Enter valid data to Password
+ Click on Login button 
+ Verify -- Homepage 
+--------------------
+
+WebElement -- Anything on the Webpage 
+           text field ,Button ,Image ,Checkbox ,link ...
+           
+           
+ Locators : identify WebElement 
+ 
+ 1.Id
+ 2.Name
+ 3.ClassName
+ 4.Tagname
+ 5.Partilalink text
+ 6.link text
+ 7.Xpath
+ 8.Css selector 
+ 
+ WebElement Email=driver.findElement(By.id("email"));
+ 
+ Email.sendKeys("Test");
+ 
+ 
+
+ 

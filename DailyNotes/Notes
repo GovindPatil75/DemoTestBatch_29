@@ -70,6 +70,36 @@ WebElement -- Anything on the Webpage
  WebElement Email=driver.findElement(By.id("email"));
  
  Email.sendKeys("Test");
+ ==============================================
+ 
+ Xpath Locator : 
+ 
+ 1.Absolute Xpath
+ navigation parent node --immidiate child--element 
+ 
+ /1/2/3/4/5/--> Xyz 
+ 
+ UI chnages ---  
+ lengthly xpath express
+ 
+ WebElement Email=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
+ 
+ Email.sendKeys("Test@gmail.com");
+ 
+ 
+ 2.Relative Xpath
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 

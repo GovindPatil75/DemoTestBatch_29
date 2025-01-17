@@ -89,6 +89,63 @@ WebElement -- Anything on the Webpage
  
  2.Relative Xpath
  
+ tagname --- < anything after this tag
+ 
+ <div
+ <li
+ <a
+ <input
+ <button
+ 
+ attribute name 
+ attribute value
+ 
+ 
+ 
+ attribute name="attribute value"
+name="Login"
+
+
+ text  :>text<
+ 
+ 1. Xpath By Attribute
+ 
+ //tagname[@attribute name='attribute value']
+ //input[@id='email']
+ 
+ WebElement Email=driver.findElement(By.xpath("//input[@id='email']"));
+ Email.sendKeys("Test");
+ 
+ 2. Xpath By text()
+ 
+ //tagname[text()='text value']
+ //a[text()='Forgotten password?']
+ 
+ WebElement FP=driver.findElement(By.xpath("//a[text()='Forgotten password?']"));
+ FP.click();
+ 
+ 
+ 
+ 
+ 3.Xpath By Contains()
+ 4. XPath By Index
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  

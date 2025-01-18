@@ -129,7 +129,110 @@ name="Login"
  
  3.Xpath By Contains()
  4. XPath By Index
- 
+=========================================================================================================
+
+Revision Session 1 :518/1/2024)
+================================
+Automation Testing :
+---------------------------
+testing any application ----Automation Tool 
+
+Selenium --Tool
+
+ManualTesting DisAdv :
+---------------
+1.required more sources
+2.Regression /CrossBrowser --- time Consuming
+3.Test cycle duration increase
+
+Automation Testing Adv :
+------------------------
+1.required less resources
+2.Regression/cross Browser ---required less time 
+3.Test Cycle duration decrease 
+
+-------------Why selenium ? / Selenium Adv
+1. Selenium Open source ---- No licence required --->
+2.support muktiple O.S. --- platform independent 
+3. supports multiple lang --- Java ,C#,Pearl,Python ....
+4.its supports multiple browser also
+
+Selenium DisAdv :
+-----------------------
+1. we can automate only Web based application 
+2.Standalone/Desktop --- we can not automate 
+3.Captcha and Barcode --- we can not automate
+4. File Upload and file download ---> Third Party AutoIT/Robot class 
+
+==================================================================================
+Selenium WebDriver Arch:
+
+Search Context(I) -extends -WebDriver(I)--implements---Remote WebDriver Class(C)--extends--ChromiumDriver(C)-
+extends--ChromeDriver (C)/BrowserDriver class 
+
+
+Abstract Methods : --- declare --- no implemantation/no body 
+
+public void get(); --- WebDriver --
+
+public void get(){ --- Remote WebDriver class 
+//code
+}
+
+ChromeDriver driver=new ChromeDriver ();
+driver.get("Url");
+
+driver.manage().window().maximize();
+
+---Navigation 
+driver.navigate().to("Url");
+driver.navigate().back();
+driver.navigate().forward();
+driver.navigate().refresh();
+
+===============================================================
+WebElement ? --- Anything on webpage / text filed,button,link,Image,radio button,checkbox
+Locators (8)? --- we identify the WebElement 
+
+Name/Id/Xpath  -- to identify the WebELement 
+
+
+WebElement elementname =driver.findElement(By.name("value"));
+
+WebElement elementname =driver.findElement(By.id("value"));
+
+
+Xpath ---> 
+Absolute Xpath (/)
+
+---Navigation parent node----immidiate child node---element --->Xpath Expression
+WebElement element =driver.findElement(By.xpath("Expression XPath "));
+
+DisAdv :
+lengthly expression 
+UI devloper-Dom Changes --- collaspe --No such Element exception 
+
+Relative XPath : (//)
+Navigation --parnet node-any child node // child Node 
+
+tagname 
+text()
+attribute name
+attribute value
+
+XPath By attribute :
+-------------------
+//tagname[@attribute name='attribute Value']
+
+WebElement element=driver.findElement(By.xpath("//tagname[@attribute name='attribute Value']"));
+
+
+Xpath By text() :
+-------------------------
+//tagname[text()='text value']
+
+WebElement element=driver.findElement(By.xpath("//tagname[text()='text value']"));
+
  
  
  
